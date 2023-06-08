@@ -1,0 +1,16 @@
+# Запрос чисел у пользователя
+numbers = input("Введите список чисел, разделенных пробелом: ")
+
+# Разделение строки на список чисел
+numbers_list = numbers.split()
+
+# Преобразование элементов списка в числа
+numbers_list = [int(num) for num in numbers_list]
+
+# Сортировка списка чисел
+numbers_list.sort()
+
+# Вывод отсортированного списка
+print("Отсортированный список чисел:")
+for number in numbers_list:
+    print(number)
